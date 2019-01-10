@@ -20,6 +20,7 @@ Ext.define('extdemo.view.main.Main', {
 
     controller: 'main',
     viewModel: 'main',
+    plugins: 'viewport',
 
     ui: 'navigation',
 
@@ -83,22 +84,26 @@ Ext.define('extdemo.view.main.Main', {
             xtype: 'mainlist'
         }]
     }, {
-        title: 'Users',
+        title: 'Authors',
         iconCls: 'fa-user',
-        bind: {
+/*        items:[{
+            xtype:'array-grid'
+        }]*/
+
+       /* bind: {
             html: '{loremIpsum}'
-        }
+        }*/
     }, {
-        title: 'Groups',
+        title: 'Companies',
         iconCls: 'fa-users',
-        bind: {
+        /*bind: {
             html: '{loremIpsum}'
-        }
+        }*/
     }, {
         title: 'Settings',
         iconCls: 'fa-cog',
-        bind: {
+       /* bind: {
             html: '{loremIpsum}'
-        }
+        }*/
     }]
 });

@@ -20,7 +20,10 @@ Ext.define('extdemo.Application', {
     ],
 
     launch: function () {
-        // TODO - Launch the application
+        alert("weqqw");
+        Ext.create({
+            xtype:'customer'
+        })
     },
 
     onAppUpdate: function () {

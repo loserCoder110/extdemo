@@ -17,5 +17,5 @@ Ext.define('extdemo.view.main.MainController', {
         if (choice === 'yes') {
             //
         }
-    }
+    },
 });
