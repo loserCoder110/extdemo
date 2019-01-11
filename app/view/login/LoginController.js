@@ -14,8 +14,8 @@ Ext.define('extdemo.view.login.LoginController',{
 			//xtype:'formulas' // 计算公式
 			//xtype:'array-grid' //基本图书显示
 			//xtype:'app-main'
-			//xtype:'array-grid2' //公司展示
-			  xtype:'array-grid4'  //多条件分类
+			xtype:'array-grid2' //公司展示
+			//xtype:'multi-sort-grid'  //多条件分类
 		});
 	}
 

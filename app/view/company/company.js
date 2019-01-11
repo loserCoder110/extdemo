@@ -1,4 +1,4 @@
-/*Ext.define('extdemo.view.company',{
+Ext.define('extdemo.view.company.Company',{
 	extend:'Ext.panel.Panel',
 	alias:'view.company',
 	xtype:'array-grid2',
@@ -30,7 +30,7 @@
 		title:'grid contains "row number","column lines","sortable"',
 	/*		width:500,
 			height:500,*/
-	/*columnLines:true,	//设置表格的列框线	
+	columnLines:true,	//设置表格的列框线	
 	store:{
 		type:'company',
 		autoLoad:true
@@ -81,5 +81,4 @@
 /*    tbar:[
     	'@abcdefg'
     	]*/
-/*});
-*/
+});

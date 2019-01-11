@@ -1,0 +1,9 @@
+Ext.define('extdemo.model.Book',{
+	extend:'Ext.data.Model',
+	fields:[
+	{name:'author',type:'string'},
+	{name:'title',type:'string'},
+	{name:'manufacturer',type:'string'},
+	{name:'productGroup',type:'string'}
+	]
+});

@@ -1,4 +1,4 @@
-/*Ext.define('extdemo.view.book.bookView',{
+Ext.define('extdemo.view.book.bookView',{
 	extend:'Ext.grid.Panel',
 	xtype:'array-grid',
 	controller:'bookViewC',
@@ -20,7 +20,7 @@
 	multiSelect:true,
 	stateId:'abc',
 	headerBorders:false,*/
-	/*plugins: 'viewport',
+	plugins: 'viewport',
 
 	columns:[{
 		text:'Author',
@@ -53,4 +53,4 @@
 	}
 
 
-});*/
+});

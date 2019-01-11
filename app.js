@@ -10,7 +10,7 @@ Ext.application({
 
     requires: [
         'extdemo.view.main.Main',
-        'extdemo.view.customer'
+/*        'extdemo.view.login.Login'*/
     ],
 
     // The name of the initial view to create. With the classic toolkit this class
@@ -18,6 +18,7 @@ Ext.application({
     // modern toolkit, the main view will be added to the Viewport.
     //
     //mainView: 'extdemo.view.main.Main'
+    //mainView: 'extdemo.view.login.Login'      
 
     //-------------------------------------------------------------------------
     // Most customizations should be made to extdemo.Application. If you need to
