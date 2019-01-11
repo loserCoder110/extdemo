@@ -1,0 +1,101 @@
+Ext.define('extdemo.view.calcu.Calcu',{
+	extend:'Ext.window.Window',
+	requires:['extdemo.view.calcu.CalcuController',
+				'extdemo.view.calcu.CalcuViewModel'],
+	xtype:'app-calcu',
+	controller:'calcu',
+	//视图的view model
+	viewModel:{type:'calcu'},
+	autoShow:true,//不设置该属性的话，页面展示出不来
+	resizable:false,
+	baseCls:'x-window',
+	//bodyStyle:'background:red;padding:10px',
+	//plain:true,
+	
+	/*使用table布局，四列      CSS类使用 cls 属性指定。*/
+	layout:{
+		type:'table',
+		columns:4 /*表示该布局一共 4 列，另外还有rowspan属性*/
+	},
+
+
+	/*defaultType 和 defaults属性是用于items内的子组件，子组件可以显示定义来覆盖这些配置*/
+	defaultType:'button',
+	defaults:{
+		width:50,
+		height:50,
+		cls:'btn',
+		handler:'onClickNumber'
+	},
+	/*这里用Ext.window.Window 的header显示计算器的结果，使用header可以再浏览器中移动这个计算器*/
+	header:{
+		items:[{
+			xtype:'displayfield',
+			colspan:4,
+			width:20,
+			cls:'display',
+			bind:{
+				value:'{display}'
+			},
+			height:60,
+			padding:0
+		}]
+	},
+
+	items:[{
+		text:'C',
+		colspan:2,
+		width:100,
+		cls:'btn-green',//相当于html中的class
+		handler:'onClickClear'
+	},{
+		text:'+/-',
+		cls:'btn-green',
+		handler:'onClickChangeSign'
+	},{
+		text:'&divide',
+		cls:'btn-orange',
+		handler:'onClickOp'
+	},{
+		text:'7'
+	},{
+		text:'8'
+	},{
+		text:'9'
+	},{
+		text:'&times;',
+		cls:'btn-orange',
+		handler:'onClickOp'
+	},{
+		text:'4'
+	},{
+		text:'5'
+	},{
+		text:'6'
+	},{
+		text:'-',
+		cls:'btn-orange',
+		handler:'onClickOp'
+	},{
+		text:'1'
+	},{
+		text:'2'
+	},{
+		text:'3'
+	},{
+		text:'+',
+		cls:'btn-orange',
+		handler:'onClickOp'
+	},{
+		text:'0',
+		width:100,
+		colspan:2
+	},{
+		text:'.',
+		handler:'onClickDot'
+	},{
+		text:'=',
+		cls:'btn-orange',
+		handler:'onClickOp'
+	}]
+});
