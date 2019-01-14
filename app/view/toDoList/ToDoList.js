@@ -1,0 +1,41 @@
+Ext.define('extdemo.view.toDoList.ToDoList',{
+	/*
+		创建一个备忘录：本来是可以使用Grid组件来创建，但是现在使用自定义的方式来做
+
+		已存在的列表UI在viewController中动态生成
+	*/	
+	extend:'Ext.panel.Panel',
+	requires:[
+	'extdemo.view.toDoList.ToDoListModel',
+	'extdemo.view.toDoList.ToDoListController'
+	],
+	xtype:'app-toDoList',
+	controller:'toDoList',
+	viewModel:{
+		type:'toDoList'
+	},
+	plugins:'viewport',
+	items:[{
+		xtype:'container',
+		items:[{
+			xtype:'container',
+			layout:'hbox',
+			cls:'task-entry-panel',
+			defaults:{
+				flex:1
+			},
+			items:[{
+				reference:'newToDo',
+				xtype:'textfield',
+				emptyText:'Enter a new to do here'
+			},{
+				xtype:'button',
+				name:'addNewToDo',
+				cls:'btn-orange',
+				text:'Add',
+				maxWidth:'50',
+				handler:'onAddToDo'
+			}]
+		}]
+	}]
+});

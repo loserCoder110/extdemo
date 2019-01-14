@@ -19,7 +19,7 @@ Ext.define('extdemo.view.calcu.Calcu',{
 	},
 
 
-	/*defaultType 和 defaults属性是用于items内的子组件，子组件可以显示定义来覆盖这些配置*/
+	/*defaultType 和 defaults属性是用于items内的子组件，子组件可以显式定义来覆盖这些配置*/
 	defaultType:'button',
 	defaults:{
 		width:50,
@@ -27,7 +27,7 @@ Ext.define('extdemo.view.calcu.Calcu',{
 		cls:'btn',
 		handler:'onClickNumber'
 	},
-	/*这里用Ext.window.Window 的header显示计算器的结果，使用header可以再浏览器中移动这个计算器*/
+	/*这里用Ext.window.Window 的header显示计算器的结果，使用header可以在浏览器中移动这个计算器*/
 	header:{
 		items:[{
 			xtype:'displayfield',
