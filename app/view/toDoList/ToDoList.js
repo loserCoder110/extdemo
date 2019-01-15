@@ -25,7 +25,7 @@ Ext.define('extdemo.view.toDoList.ToDoList',{
 				flex:1
 			},
 			items:[{
-				reference:'newToDo',
+				reference:'newTodo',
 				xtype:'textfield',
 				emptyText:'Enter a new to do here'
 			},{

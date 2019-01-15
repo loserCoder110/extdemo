@@ -4,23 +4,27 @@ Ext.define('extdemo.view.toDoList.ToDoListModel',{
 	xtype:'toDoList',
 
 	stores:{
-		todos:{  //todos这个名字是自定义的
+		todos:{  //todos这个名字是自定义的:就是storeId
 			fields:[{
 				name:'id',
 				type:'string'
 			},{
-				name:'desc',
+				name:'descrip',
 				type:'string'
+			},{
+				name:'done',
+				type:'boolean'
 			}],
 			autoLoad:true,
+			autoSync:false,
 			sorters:[{
 				property:'done',
+
 				direction:'ASC'
 			}],
 			proxy:{
-				type:'jsonp',
-				url:'http://localhost:8080/getToDoList',
-				
+				type:'ajax',
+				url:'/getToDoList',
 				readers:{
 					type:'json',
 				},

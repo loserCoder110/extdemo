@@ -47,7 +47,7 @@
                 {"abbr":"NOV","name":"November"},
                 {"abbr":"DEC","name":"December"}]
             });    
-           // Ext.create({xtype:'app-calcu'});
+           // Ext.create({xtype:'customer'});
             Ext.create({xtype:'app-toDoList'});
 
 /* //button
