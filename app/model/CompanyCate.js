@@ -1,0 +1,12 @@
+Ext.define('extdemo.model.CompanyCate',{
+	extend:'Ext.data.Model',
+	fields:[
+		{name:'fname',type:'string'},
+		{name:'lname',type:'string'},
+		{name:'email',type:'string'},
+		{name:'address',type:'string'},
+		{name:'city',type:'string'},
+		{name:'state',type:'string'},
+		{name:'type',type:'string'},
+		{name:'phone',type:'string'}]
+})

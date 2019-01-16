@@ -48,7 +48,8 @@
                 {"abbr":"DEC","name":"December"}]
             });    
            // Ext.create({xtype:'customer'});
-            Ext.create({xtype:'app-toDoList'});
+           // Ext.create({xtype:'app-toDoList'});
+            Ext.create({xtype:'app-companycate'});
 
 /* //button
 Ext.create('Ext.Button',{
