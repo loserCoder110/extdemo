@@ -1,4 +1,4 @@
-Ext.define('extdemo.store.CompanyCateStore',{
+Ext.define('extdemo.store.CompanyCateStoreUnique',{
 	extend:'Ext.data.Store',
 	alias:'store.companyCateStore',
 	model:'extdemo.model.CompanyCate',
@@ -15,4 +15,6 @@ Ext.define('extdemo.store.CompanyCateStore',{
 		{'fname':'monkey','lname':'Sun','email':'sun@huaguoshan.com','address':'flower-fruit-mountain','city':'HaiNan','state':'Tang-dynasty','type':'team','phone':'110-7789-898'}*/
 		]
 
-})
+});
+
+/*Ext.create('extdemo.store.CompanyCateStore').load();*/

@@ -16,7 +16,7 @@
     },
 
     stores: [
-        //'Book'
+       'companyCateStore'
         ],
 
         views:[
@@ -25,6 +25,7 @@
         'extdemo.view.book.bookView',  
         'extdemo.view.dynamic.dynamic',
         'extdemo.view.multipleSort',
+        'extdemo.view.companyCategory.companyCate',
         ],
 
 
@@ -49,6 +50,7 @@
             });    
            // Ext.create({xtype:'customer'});
            // Ext.create({xtype:'app-toDoList'});
+           alert("sdad");
             Ext.create({xtype:'app-companycate'});
 
 /* //button

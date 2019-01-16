@@ -2,10 +2,10 @@ Ext.define('extdemo.view.companyCategory.companyCate',{
 	extend:'Ext.panel.Panel',
 	requires:[
 			'extdemo.view.companyCategory.companyCateController',
-			'extdemo.view.companyCategory.companyCateModel'
+			'extdemo.view.companyCategory.companyCateModel',
 	],
 	xtype:'app-companycate',
-	controller:'companyCate',
+	controller:'companyCate123',
 	viewModel:{
 		type:'companyCate'
 	},
