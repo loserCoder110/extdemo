@@ -9,4 +9,4 @@ Ext.define('extdemo.model.CompanyCate',{
 		{name:'state',type:'string'},
 		{name:'type',type:'string'},
 		{name:'phone',type:'string'}]
-})
+});

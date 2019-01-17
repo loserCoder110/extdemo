@@ -16,7 +16,7 @@
     },
 
     stores: [
-       'companyCateStore'
+       'test'
         ],
 
         views:[
@@ -48,10 +48,11 @@
                 {"abbr":"NOV","name":"November"},
                 {"abbr":"DEC","name":"December"}]
             });    
-           // Ext.create({xtype:'customer'});
-           // Ext.create({xtype:'app-toDoList'});
-           alert("sdad");
-            Ext.create({xtype:'app-companycate'});
+            //Ext.create({xtype:'customer'});
+            // Ext.create({xtype:'app-toDoList'});
+           //alert("sdad");
+            var win = Ext.create({xtype:'app-companycate'});
+            win.show();
 
 /* //button
 Ext.create('Ext.Button',{
