@@ -1,0 +1,46 @@
+Ext.define('extdemo.store.TreeGrid',{
+	extend:'Ext.data.TreeStore',
+	alias:'store.TreeGrid',
+	root:{
+		expanded:false,
+		text:'Coo',
+		children:[{
+			name:'Antarctica',
+			population:0,
+			area:14,
+			leaf:true
+		},{
+			name:'South America',
+			population:385,
+			area:17.85,
+			expanded:false,
+			children:[{
+				name:'Chile',
+				population:18,
+				area:0.7,
+				leaf:true,
+			}]
+		},{
+			name:'Asia',
+			expanded:true,
+			population:4164,
+			area:44.57,
+			children:[{
+				name:'India',
+				leaf:true,
+				population:1210,
+				area:3.2
+			},{
+				name:'China',
+				population:1357,
+				leaf:true,
+				area:9.5
+			}]
+		},{
+			name:'Africa',
+			leaf:true,
+			population:1110,
+			area:30
+		}]
+	}
+});

@@ -16,7 +16,8 @@
     },
 
     stores: [
-       'test'
+       'basicdata',
+       'TreeGrid'
         ],
 
         views:[
@@ -51,8 +52,12 @@
             //Ext.create({xtype:'customer'});
             // Ext.create({xtype:'app-toDoList'});
            //alert("sdad");
-            var win = Ext.create({xtype:'app-companycate'});
-            win.show();
+            // Ext.create({xtype:'app-companycate'});
+            //Ext.create({xtype:'bbbttt'});
+            Ext.create({xtype:'tree-grid'})
+
+
+
 
 /* //button
 Ext.create('Ext.Button',{

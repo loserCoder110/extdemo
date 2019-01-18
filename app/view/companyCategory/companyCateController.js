@@ -7,7 +7,7 @@ Ext.define('extdemo.view.companyCategory.companyCateController',{
 		this.lookupReference('btnR').enable();
 	},
 
-	onSave:function(){
+/*	onSave:function(){
 		Ext.getStore('cateGrid').save();
 	},
 
@@ -28,7 +28,7 @@ Ext.define('extdemo.view.companyCategory.companyCateController',{
 		var r = Ext.create();
 		gird.getStore().insert(0,r);
 		grid.plugins[0].startEdit(0,0); 
-	}
+	}*/
 
 
 
